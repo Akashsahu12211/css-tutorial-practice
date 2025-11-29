@@ -1,0 +1,317 @@
+h3{
+    color: red;    
+}
+button{
+    background-color: green;
+    
+   
+}
+body{
+    background-color: #fffff0;
+}
+
+
+*{
+    font-family: green;
+}
+h2{
+    color: blue;
+}
+
+#heading1{
+    color: yellow
+}
+.myclass{
+    color: purple;
+}   
+#box{
+    background-color: blue;
+}
+.heading{
+    
+    color: red;
+}
+
+/*  text proprties */
+p{
+    text-align: center ;
+}
+h6{
+   text-align : center ;
+   text-transform: capitalize;
+} 
+h5{
+    text-align: center;
+    height : 100px;
+    width  : 100px;
+    background-color : yellow;
+    border : 2px solid red; 
+    border-radius : 10% ;  
+    
+    padding: 50px 50px 3px 50px ;
+  
+
+
+}  
+h4{
+    text-align: center;
+    height : 100px;
+    width  : 100px;
+    background-color : yellow;
+    border : 2px solid red; 
+    border-radius : 10% ;  
+    padding: 50px 50px 3px 50px ;
+    margin  :   100px 10px 10px 10px 
+  
+
+
+}  
+#navbar{
+    height : 60px;
+    color: white;
+    background-color : #0f1110;
+   
+}
+button{
+    background-color: #f0880f;
+}
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}
+a{
+    color: white;
+    margin-right: 200px;
+    text-decoration: none;
+}
+/* display property */
+#div{
+    background-color: yellowgreen;
+    display: inline;
+}
+#bt{
+    display: block;
+    
+}
+
+
+#box1{
+    background-color: rgb(74, 18, 243);
+    height: 200px  ;
+    width: 200px ;
+    padding: 25px ;
+    margin: 25px ;
+    display: inline-block;
+    visibility: hidden;   /*  reserved place but not visible */
+    
+}
+#box2{
+    background-color: rgb(159, 102, 102);
+     height: 200px  ;
+    width: 200px ;
+    padding: 25px ;
+    margin: 25px ;
+    display: none;     /*  no reserved place and not visible */
+}
+#box3{
+    background-color: rgb(9, 103, 9);
+     height: 200px  ;
+    width: 200px ;
+    padding: 25px ;
+    margin: 25px ;
+     display: inline-block;  /*for apply all properties   in inite and block not apply given property   */
+}
+
+                    /*   Alpha channel  */
+#box4{
+    background-color: rgba(255, 0, 0, 0.5);   /*  red color with 50% opacity  */
+    color: rgba(255, 0, 0, 1);             /*  red color with 100% opacity  */
+     height: 200px  ;
+    width: 200px ;
+    padding: 25px ;
+    margin: 25px ;
+    display: block;  /* for apply only height and width not apply other properties  */
+}     
+
+/*    assignment 4  */
+                             /* 1 . */
+
+
+.contentbox{
+    height: 100px;
+    width: 100px;
+    border : 2px solid black;
+    display: inline-block;
+    background-color: white     ;
+   margin: 1px;
+    
+}
+#content{
+    height: 650px;;
+}
+
+                             /* 2 . */
+#one{
+    background-color: red;
+}
+#two{
+    background-color: green;
+}
+#three{
+    background-color: blue;
+}
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    position:center;
+    color: white;
+   
+}     
+                 /*  static   */
+#box10{
+    height: 100px;
+    width: 100px;
+    border : 2px solid black;
+   background-color: red;
+   display: inline-block;
+   position : static;
+               /*   no effect of top property in static position */
+}
+
+#box20{
+    height: 100px;
+    width: 100px;
+    border : 2px solid black;
+    background-color: green;
+    display:inline-block ;
+    position: relative;
+    top: 20px;
+                                           /*   top property work in relative position  */
+}
+#box30{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: blue;
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+
+}
+
+#box40{
+    height: 100px;
+    width: 100px;
+    border : 2px solid black;
+    background-color: yellow;
+    display: inline-block;
+    position: fixed;
+    top: 0px;
+    
+}
+#box50{
+    height: 100px;
+    width: 100px;
+    border : 2px solid black;
+    background-color: orange;
+    display: inline-block;
+    position: sticky;
+    top: 0px;
+    left :20px;
+    
+}
+#positionplayground{
+    height: 2000px;
+    width: 100%;
+    background-color: lightgray;
+}
+
+/*  background image  */
+#boxa{
+    height: 100px;
+    width: 100px;
+    bottom: 0px;
+    border : 2px solid black;
+   background-image: url("slash.jpg");
+   background-size: cover;
+
+  
+    
+}
+#boxb{
+    height: 100px;
+    width: 100px;
+    bottom: 0px;
+    border : 2px solid black;
+   background-image: url("slash.jpg");
+   background-size: cover;
+  
+    
+}
+#boxc{
+    height: 100px;
+    width: 100px;
+    bottom: 0px;
+    border : 2px solid black;
+   background-image: url("nsplash.jpg");
+    background-size: cover;
+  
+    
+}
+/* #backgroundimage{
+    height: 1000px;
+    width: 100%;
+    background-image: url("nsplash.jpg");
+    background-size: cover;
+  
+} */
+
+/*  flexbox  */
+#flexboxcontainer{
+    border : 2px solid black;
+    background-color: #fffff0;
+    margin: 100px;
+}
+#flexboxitem1{
+    border : 2px solid black;
+    background-color: lightblue;
+    
+    padding:20px; ;
+    display: inline-block;
+}
+#flexboxitem2{
+    border : 2px solid black;
+    background-color: lightgreen;
+    
+    padding: 20px;
+    display: inline-block;
+}
+#flexboxitem3{
+    border : 2px solid black;
+    background-color: lightcoral;
+   
+    padding: 20px;
+    display: inline-block;
+}
+#flexboxitem4{
+    border : 2px solid black;
+    background-color: lightpink;
+    
+    padding: 20px;
+    display: inline-block;
+}
+#flexboxitem5{
+    border : 2px solid black;
+    background-color: lightgray;
+   
+    padding: 20px;
+    display: inline-block;
+}
+#flexboxitem6{
+    border : 2px solid black;
+    background-color: lightyellow;
+    
+    padding: 20px;
+    display: inline-block;
+}
