@@ -268,50 +268,282 @@ footer{
 } */
 
 /*  flexbox  */
+div{
+   
+    height: 100px;
+    width: 100px;
+    border : 2px solid black;
+    display: inline-block;
+    
+}
 #flexboxcontainer{
     border : 2px solid black;
-    background-color: #fffff0;
-    margin: 100px;
-}
-#flexboxitem1{
-    border : 2px solid black;
-    background-color: lightblue;
+    height: 200px;
+    width: 1000px;
+
+    /* flex direction  */
+    display: flex;           /*  flex box ki container  banane ke liye  display : flex  likhna hota hai */
+     flex-direction: row;     /* default value row hota hai  (main axis = row = left se right arrangement ) */
+    /* flex-direction: row-reverse;    row-reverse  se right se left arrangement hota hai  */
+    /* flex-direction: column;   /*  column  se top se bottom arrangement hota hai  */
+    /* flex-direction: column-reverse;   /*  column-reverse  se bottom se top arrangement hota hai  */
+
+    /* flex box  properties  */
+
+    /* justify-content: flex-start;    items ko left side se align karta hai  */
+    /* justify-content: flex-end;    items ko right side se align karta hai     */
+    justify-content: center;   /* items ko center me align karta hai    
+      /* justify-content: space-between;    items ke beech me equal space deta hai  */
+    /* justify-content: space-around;   /*  items ke around equal space deta hai  */
+    /* justify-content: space-evenly;   /*  items ke beech me aur around equal space deta hai  */
     
-    padding:20px; ;
-    display: inline-block;
+        /* flex wrap */
+
+    /* flex-wrap: nowrap;   default value  sab items ek line me aate hai  */
+    flex-wrap: wrap;  /* items ko next line me le jata hai 
+    /* flex-wrap: wrap-reverse;    items ko next line me le jata hai  aur reverse order me  */
+
+     /* /align items  */
+
+    /* align-items: flex-start;    cross axis  ke start me align karta hai  */
+    /* align-items: flex-end;    cross axis  ke end me align karta hai */
+    align-items: center;    /* cross axis  ke center me align karta hai  */
+    /* align-items: stretch;    cross axis  ke full stretch kar deta hai  */
+
+
+    /* align-content */
+
+    /* align-content: flex-start;    cross axis  ke start me align karta hai  */
+    /* align-content: flex-end;    cross axis  ke end me align karta hai */ 
+    align-content: stretch;    /* cross axis  ke full stretch kar deta hai  */
+    /* align-content: center;    cross axis  ke center me align karta hai  */
+    /* align-content: space-between;   cross axis  me items ke beech me equal space deta hai  */
+    /* align-content: space-around;   cross axis  me items ke around equal space deta hai  */
+    /* align-content: space-evenly;   cross axis  me items ke beech me aur around equal space deta hai  */
+
+    /* flex properties for flex items */
+
+    /* align-self: center;    individual item ko cross axis  me center me align karta hai     */
+    align-self: flex-start;   /*  individual item ko cross axis  ke start me align karta hai  */   
+    /* align-self: flex-end;    individual item ko cross axis  ke end me align karta hai   */
+    /* align-self: stretch;    individual item ko cross axis  me stretch kar deta hai  */
+
+    /* flex grow - jam kabhi badi screen aaye to items bade ho jaye equely  */
+
+    /* flex-grow: 1;    items ko equely bada kar deta hai  */
+    /* flex-grow: 2;    item ko 2 times bada kar deta hai  */
+    /* flex-grow: 3;    item ko 3 times bada kar deta hai  */
+    flex-grow: 0;    /* item ko original size me rakhta hai  */
+
+     /* flex  shrink - jam kabhi badi screen aaye to items chote ho jaye equely  */ 
+    /* flex-shrink: 1;    items ko equely chota kar deta hai  */
+    /* flex-shrink: 2;    item ko 2 times chota kar deta    hai  */ 
+    /* flex-shrink: 3;    item ko 3 times chota kar deta hai  */
+    flex-shrink: 0;    /* item ko original size me rakhta hai  */   
+
+    /*  yadi kisi individual item ko grow ya shrink karana chahte hai to ise item me likhte hai  (flex-shrink: 3)  */
+
+
+
+
+
+}
+
+
+
+
+#flexboxitem1{
+    
+    background-color: lightblue;
+   
 }
 #flexboxitem2{
-    border : 2px solid black;
+   
     background-color: lightgreen;
     
-    padding: 20px;
-    display: inline-block;
+  
+    
 }
 #flexboxitem3{
-    border : 2px solid black;
+   
     background-color: lightcoral;
    
-    padding: 20px;
-    display: inline-block;
+   
 }
 #flexboxitem4{
-    border : 2px solid black;
+   
     background-color: lightpink;
     
-    padding: 20px;
-    display: inline-block;
+   
 }
 #flexboxitem5{
-    border : 2px solid black;
+   
     background-color: lightgray;
    
-    padding: 20px;
-    display: inline-block;
 }
 #flexboxitem6{
-    border : 2px solid black;
+    
     background-color: lightyellow;
     
-    padding: 20px;
-    display: inline-block;
+    
 }
+ 
+/*  practice set 6 */
+#navbar3{
+    height: 100px;
+    width: 150%;
+    background-color: #49524e;
+    color: rgb(116, 54, 27);
+}
+#mediaquarybox{
+    height: 200px ;
+    width: 200px;
+    background-color: blue;
+    color: tomato;
+   }
+    @media (max-width :300px){
+        #mediaquarybox{
+            background-color: rgb(27, 185, 64);
+        }
+    }
+    @media (min-width :300px) and (max-width :400px){
+        #mediaquarybox{
+            background-color: rgb(206, 51, 146);
+        }
+    }
+    @media (min-width :400px) and (max-width :600px){
+        #mediaquarybox{
+            background-color: rgb(216, 50, 13);
+        }
+    }
+    @media (min-width :600px) {
+        #mediaquarybox{
+            background-color: rgb(13, 50, 216);
+        }
+    }
+
+/*  trassition  */
+#trassition{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(86, 32, 32);
+    text-align: center;
+    line-height: 100px;
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.5s;
+    /* transition: all 2s ease-in-out 0.5s;     - shorthand  */    
+}
+#trassition:hover{
+    background-color: rgb(218, 36, 27);
+    width: 150px;
+    height: 150px;
+    font-size: larger;
+    color: thistle;
+    transform: rotate(90deg);
+    /* transform: scale(2); */
+    
+}
+/*  trassition 2D and 3D */
+#transformbox{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(30, 240, 86);
+    border:2px solid black;
+    text-align: center;
+    line-height: 100px;
+
+    transition:all 2s ease-in ;
+
+    /*  rotate property  */
+
+    /* transform: rotate(180deg); */
+    /* rotate:  90deg; */
+    /* rotate: z 90deg; */
+
+   /* scale for 2d */
+   /* transform: scale(1); */
+    /* scaleX(2);   scaleY(2); */
+
+    /* translate - move  */
+    /* transform: translate(1000px); */ 
+    /* translateX(50px);   translateY(100px); */
+    /* skew */
+    transform: skew(30deg);
+    /* transform: skew(30deg, 20deg); */
+    /* skewX(30deg);   skewY(20deg); */ 
+}
+#transformbox:hover{
+    background-color: rgb(218, 36, 27);
+    width: 150px;
+    height: 150px;
+    transform: translateX(1000px);
+ 
+}
+/*  animation  */
+#animationbox{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(33, 229, 85);
+    border: #0f1110 2px solid;
+    text-align: center;
+    line-height: 100px;
+    animation-name: myanimation;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    /* animation shorthand  */
+    /* animation: myanimation 2s ease-in-out 1s infinite alternate; */
+
+
+}
+@keyframes myanimation{
+   /* from{
+        background-color: rgb(33, 229, 85);
+        transform: rotate(0deg);
+        
+    }
+    to{
+        background-color: rgb(218, 36, 27);
+        transform: rotate(360deg);
+       
+    } */
+
+                   /*  or  */
+    0%{
+        background-color: rgb(33, 229, 85);
+        transform: rotate(0deg);
+    }
+    50%{
+        background-color: rgb(218, 36, 27);
+        transform: rotate(180deg);
+    }
+    100%{
+        background-color: rgb(75, 33, 229);
+        transform: rotate(360deg);
+
+}   
+
+} 
+/*  practice set 8   */    
+#loader{
+    height: 100px;
+    width: 100px;
+    border: 10px solid rgb(255, 255, 255);
+    border-top: 10px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    animation: spin 1s linear infinite normal;
+    margin: auto;
+}  
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+   
